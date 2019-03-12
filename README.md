@@ -108,3 +108,22 @@ fim_algoritmo
 Explicação:
 
 O algoritmo pCartesiano realiza o produto cartesiano entre dois conjuntos. A função pCarteiano recebe como parâmetro dois conjuntos (a, b) sob os quais o produto cartesiano será realizado. É inicializado o conjunto c3, que conterá o resultado do produto cartesiano. Utilizando um loop controlado o primeiro conjunto (a) recebido como parâmetro na função é percorrido, dentro do loop controlado do primeiro conjunto (a), o segundo conjunto (b) recebido como parâmetro na função também é percorrido, e para cada um dos seus elementos, a função escreva é responsável por criar o par com o elemento da iteração do primeiro (a) com o segundo (b) conjunto e adiciona-lo no conjunto c3. Ao final da rotina, o conjunto c3 contendo o produto cartesiano do conjunto a sob o conjunto b é retornado.
+
+**Complemento**
+
+Algoritmo:
+
+```
+algoritmo
+	sub-rotina complementar (c1, c2 numerico):
+		inicio
+		declare c3 numerico
+		c3 <- {}
+		para a em c1 faca:
+			se a nao esta em c2:
+				c3 <- c3 + a
+		retorne c3
+		fim
+	fim_sub_rotina
+fim_algoritmo
+```
